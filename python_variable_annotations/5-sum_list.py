@@ -7,12 +7,12 @@ This module provides a function sum_list which takes a list input_list of
 """
 
 
-def sum_list (input_list : List[float]) -> float:
+def sum_list(input_list: List[float]) -> float:
     """
     Takes a list input_list of floats as argument
 
     Args:
-    n: list: The float.
+    input_list: list: The float.
 
     Returns:
     The sum as a float.
