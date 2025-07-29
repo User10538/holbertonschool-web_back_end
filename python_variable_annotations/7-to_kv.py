@@ -6,9 +6,9 @@ This module provides a function to_kv that takes a string
 """
 
 
-from typing import Union
+from typing import Union, Tuple
 
-def to_kv(k: str, v: Union[int, float]) -> tuple[str,float]:
+def to_kv(k: str, v: Union[int, float]) -> Tuple[str,float]:
     """
     Takes a string k and an int OR float v as arguments
 
