@@ -16,5 +16,5 @@ def floor(n: float) -> int:
     """
     if not isinstance(n, float):
         raise TypeError("n must be a float")
-    
+
     return int(n)
