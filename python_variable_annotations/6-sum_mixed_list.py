@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 
 """
-This module provides a function sum_mixed_list which takes a list mxd_lst of integers
+This module provides a function sum_mixed_list which takes a list
+ mxd_lst of integers
  and floats and returns their sum as a float.
 """
 
@@ -19,6 +20,6 @@ def sum_mixed_list(mxd_lst: List[Union[int, float]]) -> float:
     Returns:
     The sum as a float.
     """
-    total_sum = sum(int(sub) for sub in mxd_lst)
+    total_sum = sum(mxd_lst)
 
     return float(total_sum)
