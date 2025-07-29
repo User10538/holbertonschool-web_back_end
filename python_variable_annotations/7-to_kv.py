@@ -8,7 +8,7 @@ This module provides a function to_kv that takes a string
 
 from typing import Union
 
-def to_kv(k: str, v: Union[int, float]) -> float:
+def to_kv(k: str, v: Union[int, float]) -> tuple[str,float]:
     """
     Takes a string k and an int OR float v as arguments
 
