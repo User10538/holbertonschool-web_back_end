@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
-Import wait_random and write an async routine called wait_n that takes in 2 int.
-wait_n should return the list of all the delays (float values). The list of the delays 
+Import wait_random and write an async routine called wait_n
+ that takes in 2 int. wait_n should return the list of all
+ the delays (float values). The list of the delays
 should be in ascending order without using sort() because of concurrency.
 """
 
@@ -33,12 +34,12 @@ async def wait_n(n: int, max_delay: int = 0) -> List[float]:
         task = wait_random(max_delay)
         # Save the task value
         tasks.append(task)
-    
-    # Process each task as it finishes    
+
+    # Process each task as it finishes
     for finished_task in asyncio.as_completed(tasks):
         # Wait for this specific one to finish
         result = await finished_task
         # Save the delay value
         delays.append(result)
-        
+
     return delays
