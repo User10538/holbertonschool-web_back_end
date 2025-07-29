@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """
 This module provides a type-annotated function to_str that
- takes a float n as argument and returns the string representation of the float.
+ takes a float n as argument and returns
+ the string representation of the float.
 """
 
 
