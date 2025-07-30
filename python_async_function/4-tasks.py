@@ -7,7 +7,6 @@ should be in ascending order without using sort() because of concurrency.
 """
 
 
-import random
 import asyncio
 from typing import List
 
@@ -31,7 +30,7 @@ async def task_wait_n(n: int, max_delay: int = 0) -> List[float]:
 
     # Get all the coroutines (not running yet)
     #for 0 to 5 times or for 0 to 10
-    for x in range(n):
+    for _ in range(n):
         task = task_wait_random(max_delay)
         # Save the task value
         tasks.append(task)
