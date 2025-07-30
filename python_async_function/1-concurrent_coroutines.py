@@ -27,10 +27,11 @@ async def wait_n(n: int, max_delay: int = 0) -> List[float]:
     list of all the delays (float values)
     """
     delays = []  # This will store the delays returned
-    tasks = []   # This will store the task objects
+    tasks = []   # This array of function will store the task objects
 
     # Get all the coroutines (not running yet)
-    for _ in range(n):
+    #for 0 to 5 times or for 0 to 10
+    for x in range(n):
         task = wait_random(max_delay)
         # Save the task value
         tasks.append(task)
