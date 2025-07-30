@@ -3,7 +3,7 @@
 Import wait_random and write an async routine called wait_n
  that takes in 2 int. wait_n should return the list of all
  the delays (float values). The list of the delays
-should be in ascending order without using sort() because of concurrency.
+should be in ascending order
 """
 
 
