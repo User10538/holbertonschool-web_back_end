@@ -1,4 +1,10 @@
 #!/usr/bin/env python3
+"""
+Simple helper function to calculate index range for pagination.
+
+This module contains the function `index_range` that returns
+the start and end indexes for paginating a list.
+"""
 
 def index_range(page: int, page_size: int) -> tuple[int, int]:
     """
